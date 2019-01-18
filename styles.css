@@ -1,0 +1,38 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: #bebebe;
+}
+
+#wrapper {
+  margin: auto;
+  width: 24em;
+  font-size: 1.4em;
+}
+
+.right {
+  float: right;
+  transform: translateX(50%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.left {
+  float: left;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 1s ease;
+}
